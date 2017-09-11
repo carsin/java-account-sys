@@ -97,12 +97,12 @@ public class Main {
 		
 		passwordCreationInput = scan.nextLine();
 		passwordCreationInput = passwordCreationInput.toLowerCase();
-		for (int j = 0; j < users; j++) {
-			if (usernames[j] == null) {
-				usernames[j] = usernameCreationInput;
-				passwords[j] = passwordCreationInput;
-				if (r.nextInt(1) == 1) IDS[j] = "N";
-				if (r.nextInt(1) == 0) IDS[j] = "Y";
+		for (int i = 0; i < users; i++) {
+			if (usernames[i] == null) {
+				usernames[i] = usernameCreationInput;
+				passwords[i] = passwordCreationInput;
+				if (r.nextInt(1) == 1) IDS[i] = "N";
+				if (r.nextInt(1) == 0) IDS[i] = "Y";
 				System.out.println("ACCOUNT CREATION SUCCESSFUL.");
 				loginMenu();
 			} else {
